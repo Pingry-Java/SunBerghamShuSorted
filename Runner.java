@@ -13,17 +13,20 @@ public class Runner {
 			System.out.print(testData[i] + ", ");
 		}
 		
+		System.out.println();
+		
 		//TODO Test the rest of your methods here.
 		System.out.println("Test to see if the sort method works properly");
-		s.sort(testData);
-		for (int i = 0; i < testData.length; i++) {
-			System.out.print(testData[i] + ", ");
+		for (int i = 0; i < s.getItems().length; i++) {
+			System.out.print(s.get(i) + ", ");
 		}
 		
+		System.out.println();
+				
 		System.out.println("Add item '4' to the array: ");
 		s.add(4);
-		for (int i = 0; i < testData.length; i++) {
-			System.out.print(testData[i] + ", ");
+		for (int i = 0; i < s.getItems().length; i++) {
+			System.out.print(s.get(i) + ", ");
 		}
 	}
 
